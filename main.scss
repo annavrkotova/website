@@ -1,0 +1,110 @@
+$dark: #001540;
+
+html {
+  height: 100%;
+  font-family: Inter, sans-serif;
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  body {
+    height: 100%;
+
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      padding: 40px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navigation-brand {
+        text-decoration: none;
+        color: $dark;
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      .navigation-link-container {
+        display: flex;
+        align-items: center;
+
+        .navigation-link {
+          text-decoration: none;
+          color: $dark;
+          font-size: 24px;
+          font-weight: 700;
+
+          &:not(:first-child) {
+            margin-left: 40px;
+          }
+        }
+
+        .navigation-button {
+          background: linear-gradient(90deg, #D60270 0%, #9B4F96 50%, #0038A8 100%);
+          display: block;
+          line-height: 2em;
+          font-size: 24px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.02em;
+          padding: 0 1.5em;
+          color: white;
+          text-decoration: none;
+          border-radius: 2em;
+          margin-left: 80px;
+        }
+      }
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 80px;
+
+      div {
+        max-width: 1200px;
+
+        h1 {
+          color: $dark;
+          letter-spacing: 0.02em;
+          line-height: 1em;
+          font-size: 96px;
+          margin-bottom: 80px;
+
+          span {
+            letter-spacing: 0.02em;
+            line-height: 1em;
+            font-size: 96px;
+            background: linear-gradient(90deg, #D60270 0%, #9B4F96 50%, #0038A8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+
+        p {
+          font-size: 36px;
+          line-height: 1.2em;
+          font-weight: 700;
+          letter-spacing: 0.02em;
+          color: $dark;
+
+          strong {
+            font-size: 36px;
+            line-height: 1.2em;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+            color: $dark;
+          }
+        }
+      }
+    }
+  }
+}

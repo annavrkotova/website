@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+  font-family: Inter, sans-serif;
+}
+html * {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+html body {
+  height: 100%;
+}
+html body nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body nav .navigation-brand {
+  text-decoration: none;
+  color: #001540;
+  font-size: 24px;
+  font-weight: 900;
+}
+html body nav .navigation-link-container {
+  display: flex;
+  align-items: center;
+}
+html body nav .navigation-link-container .navigation-link {
+  text-decoration: none;
+  color: #001540;
+  font-size: 24px;
+  font-weight: 700;
+}
+html body nav .navigation-link-container .navigation-link:not(:first-child) {
+  margin-left: 40px;
+}
+html body nav .navigation-link-container .navigation-button {
+  background: linear-gradient(90deg, #D60270 0%, #9B4F96 50%, #0038A8 100%);
+  display: block;
+  line-height: 2em;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 0 1.5em;
+  color: white;
+  text-decoration: none;
+  border-radius: 2em;
+  margin-left: 80px;
+}
+html body header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 80px;
+}
+html body header div {
+  max-width: 1200px;
+}
+html body header div h1 {
+  color: #001540;
+  letter-spacing: 0.02em;
+  line-height: 1em;
+  font-size: 96px;
+  margin-bottom: 80px;
+}
+html body header div h1 span {
+  letter-spacing: 0.02em;
+  line-height: 1em;
+  font-size: 96px;
+  background: linear-gradient(90deg, #D60270 0%, #9B4F96 50%, #0038A8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+html body header div p {
+  font-size: 36px;
+  line-height: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #001540;
+}
+html body header div p strong {
+  font-size: 36px;
+  line-height: 1.2em;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: #001540;
+}
+
+/*# sourceMappingURL=main.css.map */
